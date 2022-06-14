@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--clr-netural : #ffffff; /*60*/
+	--clr-pri: #6220D9; /*30*/
+	--clr-sec: #41506A; /*10*/
+	--ft-pri:Poppins,serif;
+	--ft-sec:Lora,sans-serif;
+}
+.center-content{
+	margin: 0 auto;
+	max-width: min(72rem,90%);
+}
+.gs-btn{
+	padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+	border: 0;
+	background-color: var(--clr-pri);
+	color: white;
+	margin-top: 1.3rem;
+	font-size: 0.9rem;
+}
+.blue{
+	color: var(--clr-pri);
+}
+.container{
+	background-color: var(--clr-netural);
+	font-family: var(--ft-sec);
+}
+
+nav{
+	width: 100%;
+	/*position: absolute;*/
+}
+
+nav > div {
+	height: 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.links a {
+	text-decoration: none;
+	color: var(--clr-sec);
+	padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+	margin-right: 0.4rem;
+}
+.links > button{
+	border: none;
+	color: White;
+	margin-left: 0.4rem;
+	background-color: var(--clr-pri);
+	padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+.links a:hover{
+	background-color: var(--clr-pri);
+	color: #fff;
+}
+.logo{
+	cursor: pointer;
+	font-family: var(--ft-pri);
+	font-size: 1.2rem;
+	font-weight: 900;
+	letter-spacing: .08rem;
+	padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+	color:darkblue;
+	
+
+}
+.hambuger{
+	display: none;
+}
+
+@media screen and (max-width: 728px){
+	
+	nav{
+		position: relative;
+	}
+
+	.hambuger{
+		display: block;
+		position: absolute;
+		top: 30%;
+		right: 2%;
+		z-index: 999;
+	}
+	.line{
+		background-color: var(--clr-pri);
+		width: 1.2rem;
+		height: 0.2rem;
+		margin-bottom: 0.15rem;
+	}
+	.links{
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		gap:  2rem;
+		transform: translate(-100%,0);
+		transition: all 0.5s ease;
+		background-color: var(--clr-netural);
+	}
+	.links.open{
+		transform: translate(0,0);
+	}
+	
+}
+/*home page for mobile screeen */
+header >section{
+	display: flex;
+	height: 90vh;
+	flex-direction: column-reverse;
+	justify-content: center;
+}
+header >section > div {
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 1rem 2rem  ;
+	}
+
+header >section>div>p{
+	margin-top: 0.6rem;
+	color: var(--clr-sec);
+}
+
+@media screen and (min-width: 728px){
+	nav{
+		position: absolute;
+	}
+	header>section{
+		height: 100vh;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+	header>section>div{
+		text-align: left;
+	}
+	header>section>div>h2{
+	font-family: var(--ft-pri);
+	font-size: 3rem;
+	margin-bottom: rem;
+
+	}
+	header >section > div > p {
+	margin-top: 0.4rem;
+	font-size: 1rem;
+
+}
+	.card-container {
+		display: flex;
+		align-items: center;
+		height: 100vh;
+	}
+
+
+	footer{
+		padding: 1rem;
+		display: flex;
+	}
+
+}
+/*note*/
+.note{
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: var(--clr-pri);
+	margin-top: 2rem;
+}
+/*card */
+.card > img{
+	width: 300px;
+}
+.card h2 {
+	color: var(--clr-pri);
+	margin-bottom: 0.2rem;
+}
+
+.card-container a {
+	text-decoration: none;
+	color: var(--clr-sec);
+}
+.card{
+	margin: 1rem;
+	text-align: center;
+	padding: 1rem;
+	box-shadow: 2px 2px 20px #f1f1f1;
+}
+
+/*footer*/
+footer>div {
+	width: 100%;
+	text-align: center;
+	padding: 1rem;
+}
+footer{
+	margin-top: 2rem;
+	background-color: var(--clr-sec);
+	color: white;
+}
+.support i{
+	margin: 0.5rem;
+}
+
+
