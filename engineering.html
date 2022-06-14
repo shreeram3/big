@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MH College World</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<div class="center-content ">
+					<div class="logo"><a href="./index.html">MH College World</a></div>
+					<div class="hambuger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<div class="links">
+						<a href="./engineering.html">Engineering</a>
+						<a href="./diploma.html">Dipolma</a>
+						<a href="./medical.html">Medical</a>
+						<button>Login</button>
+					</div>
+				</div>
+			</nav>
+
+			<section class="center-content">
+				<div class="intro-img"><img src="./asserts/engineering.svg"></div>
+				<div class="text-content">
+					<form>
+						<div><h2>Engnineering</h2></div>
+						<div>
+							<label for = "percentage">Your Percentage : </label>
+							<input type="text" id = "percentage"name="percentage"></div>
+							<div>
+								<label for = "caste">Caste : </label>
+								<select id = "caste">
+									<option value="Open">Open</option>
+									<option value="OBC">OBC</option>
+									<option value="SC">SC/ST</option>
+								</select>
+							</div>
+							<div>
+								<button type="submit" class="gs-btn">Get Colleges</button>
+							</div>
+						</form>
+					</div>
+				</section>
+
+			</header>
+			<div class="note">this website is just a way of refering your choice, do be fully depended on us, take the professional advise before submiting the form</div>
+			<main>
+			</main>
+
+			<footer>
+				<div></div>
+
+				<div class="support">
+					<h3>Support us</h3>
+					<div>
+						<i class="fa-brands fa-facebook"></i>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-github"></i>
+					</div>
+				</div>
+				<div>
+					<button class="gs-btn">Contact Us</button>
+				</div>
+
+			</footer>
+		</div>
+		<script src="https://kit.fontawesome.com/b4e92cc7d8.js" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			const hambuger = document.querySelector(".hambuger");
+			const links = document.querySelector(".links");
+			hambuger.addEventListener('click',() =>{
+				links.classList.toggle("open")
+			})
+		</script>
+	<!-- <a href="https://storyset.com/education">Education illustrations by Storyset</a> 
+	<a href="https://storyset.com/technology">Technology illustrations by Storyset</a>
+	<a href="https://storyset.com/medicine">Medicine illustrations by Storyset</a>
+
+-->
+</body>
+</html>

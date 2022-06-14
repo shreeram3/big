@@ -61,14 +61,17 @@ nav > div {
 }
 .logo{
 	cursor: pointer;
-	font-family: var(--ft-pri);
 	font-size: 1.2rem;
 	font-weight: 900;
 	letter-spacing: .08rem;
 	padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-	color:darkblue;
 	
 
+}
+.logo a {
+	text-decoration: none;
+	font-family: var(--ft-pri);
+	color:darkblue;
 }
 .hambuger{
 	display: none;
@@ -179,6 +182,7 @@ header >section>div>p{
 	color: #fff;
 	background-color: var(--clr-pri);
 	margin-top: 2rem;
+	font-size: 0.8rem;
 }
 /*card */
 .card > img{
@@ -187,6 +191,9 @@ header >section>div>p{
 .card h2 {
 	color: var(--clr-pri);
 	margin-bottom: 0.2rem;
+}
+.card p{
+	margin-bottom: 1rem;
 }
 
 .card-container a {
@@ -216,3 +223,33 @@ footer{
 }
 
 
+form {
+	font-family: var(--ft-pri);
+	box-shadow: 2px 2px 10px #f1f1f1;
+	padding: 2rem;
+}
+form>div{
+	margin-bottom: 2rem;
+}
+form>div>h2{
+	margin-top: 2rem;
+}
+input:focus{
+	outline: none;
+}
+
+form input {
+	border: none;
+	border-bottom: solid var(--clr-pri) ;
+	font-size: 1rem;
+	padding: 0 0 .2rem 1rem;
+}
+form select {
+	padding: 0.2rem 1rem 0.2rem 1rem;
+	border: none;
+	background-color: transparent;
+}
+
+form option{
+	padding: 0 1rem 0.5rem 1rem;
+}
